@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "tour-note",
+			"name": "TourNote",
 			"item": [
 				{
 					"name": "getAll",
