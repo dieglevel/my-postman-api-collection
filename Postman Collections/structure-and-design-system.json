@@ -118,6 +118,94 @@
 						"url": "{{domain8080}}/auth/token"
 					},
 					"response": []
+				},
+				{
+					"name": "login Copy",
+					"id": "570c5dd3-3eda-4fac-9052-730bd7aeb86a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain8080}}/auth/token"
+					},
+					"response": []
+				},
+				{
+					"name": "login Copy",
+					"id": "0ac0eee1-45b2-45f3-9159-8e79e81f6ecc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain8080}}/auth/token"
+					},
+					"response": []
+				},
+				{
+					"name": "login Copy",
+					"id": "4514941e-ddd2-48fe-84e5-49f6e92cfb2c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain8080}}/auth/token"
+					},
+					"response": []
+				},
+				{
+					"name": "login Copy",
+					"id": "0f983da3-ce14-4298-b41a-a6db2fb7a272",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain8080}}/auth/token"
+					},
+					"response": []
 				}
 			],
 			"id": "e1609178-44a0-4222-aa4f-8a6a343ac0fa"
