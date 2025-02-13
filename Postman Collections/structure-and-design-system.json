@@ -143,6 +143,259 @@
 				}
 			],
 			"id": "e1609178-44a0-4222-aa4f-8a6a343ac0fa"
+		},
+		{
+			"name": "CategoryTour",
+			"item": [
+				{
+					"name": "get All",
+					"id": "e3d612d7-4f05-439b-9454-1a5fd42fa790",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{domain}}{{domain8080}}}/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "get By Id",
+					"id": "79cbf615-9662-4207-ada3-2d78bbdc589c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tour",
+					"id": "8380f438-652c-4f08-8eb9-68181cf537cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:1902/booking-service/api/category-tours/0e6edeae-ffc1-4d04-8331-843d0a469e40"
+					},
+					"response": []
+				},
+				{
+					"name": "create Category Tour",
+					"id": "13e5417b-6e34-44e0-98f2-08594128e856",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Du lịch biển Đà Nẵng\",\r\n  \"description\": \"Thư giãn bên bờ biển với những khung cảnh tuyệt đẹp\",\r\n  \"image\": \"bien_dep.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:1902/booking-service/api/category-tours"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "9cf9daa2-5373-4f99-96df-a980bbbbeb0f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Du lịch Hà Nội\",\r\n  \"description\": \"Thư giãn bên bờ biển với những khung cảnh tuyệt đẹp\",\r\n  \"image\": \"bien_dep.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:1902/booking-service/api/category-tours/0e6edeae-ffc1-4d04-8331-843d0a469e40"
+					},
+					"response": []
+				}
+			],
+			"id": "2a9678c2-2d07-40c8-bff8-f8d4c8000b29"
+		},
+		{
+			"name": "UploadFile",
+			"item": [
+				{
+					"name": "UploadImage",
+					"id": "dfabddf0-a53d-4c16-93bc-597aa04127e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				}
+			],
+			"id": "449c163d-1322-4ba3-9cb9-d5d5bc521301"
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"id": "fbc8499f-52cf-4683-a7e2-70a5333a651c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain}}{{user-service}}/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "introspect",
+					"id": "b5a47ad1-054d-48be-b787-8d1b9e16ca72",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"{{vault:json-web-token}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5723/user-service/api/auth/introspect"
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"id": "0023d5eb-2c34-43c0-b9ae-0afdcf6e82b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"{{vault:json-web-token}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5723/user-service/api/auth/introspect"
+					},
+					"response": []
+				},
+				{
+					"name": "log out",
+					"id": "48ddb935-d78d-47fc-80ca-0f0f3e2f1a3f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"{{vault:json-web-token}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5723/user-service/api/auth/introspect"
+					},
+					"response": []
+				},
+				{
+					"name": "TestOpenFeign",
+					"id": "e1dd4daa-8352-4329-a40f-649c9ee70072",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{vault:authorization-secret}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "localhost:1902/booking-service/api/user-info"
+					},
+					"response": []
+				}
+			],
+			"id": "389f0145-552f-4c71-83c2-c5cef94d2711"
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get All",
+					"id": "0ecf8276-25c8-4d36-9a82-ce4d4bf162cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{localhost-user}}/auth/introspect"
+					},
+					"response": []
+				},
+				{
+					"name": "get All Copy",
+					"id": "81d17192-8078-43d2-9312-a84ba63b6176",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:1902/booking-service/api/test-users"
+					},
+					"response": []
+				}
+			],
+			"id": "424c7f52-cdf0-4a99-b95c-482ef6eaac73"
 		}
 	]
 }
