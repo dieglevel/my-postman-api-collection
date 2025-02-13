@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "405ee56d-2672-425d-9ed3-0167cda453c2",
+		"name": "Structure-and-design-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tour-note",
+			"item": [
+				{
+					"name": "getAll",
+					"id": "121e8ca7-9586-4ff4-b405-858c189b2e0c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{domain}}tour-notes"
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"id": "42504e12-59b6-4321-b4a1-996e33fa64a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{domain}}tour-notes/f211a294-612d-4fe0-88ca-99cdcce2025e"
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"id": "48e6eb75-7982-44d3-a8c1-f6b6372e01ab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tourId\": \"5257316e-5ee2-437f-a4da-5c58311434c2\",\r\n    \"title\": \"Giá vé dành cho trẻ em:\",\r\n    \"content\": \"Từ 10 tuổi trở lên : 100% giá tour và tiêu chuẩn như người lớn.\",\r\n    \"image\": \"https://dulichviet.com.vn/images/bandidau/NOI-DIA/Phan-Thiet/bikini-beach-du-lich-viet.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain}}tour-notes"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"id": "f5f36b33-db59-4b5e-a89d-9459cba92832",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tourId\": \"59eac89a-5f63-4097-9447-cfcafcaba158\",\r\n    \"title\": \"Giá vé dành cho trẻ 44444em\",\r\n    \"content\": \"Từ 10 tuổi trở lên3333 : 100% giá tour và tiêu chuẩn như người lớn.\",\r\n    \"image\": \"https://dulichviet2222.com.vn/images/bandidau/NOI-DIA/Phan-Thiet/bikini-beach-du-lich-viet.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain}}tour-notes/0b74897a-6a57-4a2a-9f61-530542f278d6"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "f4867619-38c2-47bb-9134-c4ef0f791a4b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{domain}}tour-notes/7c8fad64-6761-4fa0-a2e0-34af28e833a2"
+					},
+					"response": []
+				}
+			],
+			"id": "2f60da67-779d-4e58-a707-0518110f10e6"
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"id": "c4ed1a02-cc41-4682-ba49-9da95178776d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{domain8080}}/auth/token"
+					},
+					"response": []
+				},
+				{
+					"name": "login Copy",
+					"id": "75da7fc4-cd4d-421d-a15c-e60e7a8dec4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}                                                                                                                                                                                                ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5723/user-service/auth/token"
+					},
+					"response": []
+				}
+			],
+			"id": "e1609178-44a0-4222-aa4f-8a6a343ac0fa"
+		}
+	]
+}
